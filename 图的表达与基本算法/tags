@@ -1,0 +1,26 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Edge	Graph_Expression/Edge.h	/^    Edge(int weight, Node *from, Node *to) : weight(weight), from(from), to(to) {}; $/;"	f	struct:Edge
+Edge	Graph_Expression/Edge.h	/^struct Edge {$/;"	s
+Graph	Graph_Expression/Graph.h	/^struct Graph {$/;"	s
+Node	Graph_Expression/Node.h	/^    Node(int value) : value(value) {}$/;"	f	struct:Node
+Node	Graph_Expression/Node.h	/^struct Node {$/;"	s
+_EDGE_H	Graph_Expression/Edge.h	10;"	d
+_GRAPH_H	Graph_Expression/Graph.h	10;"	d
+_NODE_H	Graph_Expression/Node.h	10;"	d
+bfs	图的深度与广度优先遍历.cpp	/^void bfs(Node *node) {$/;"	f
+edges	Graph_Expression/Graph.h	/^    std::unordered_set<Edge> edges;        \/\/ 图拥有的边集$/;"	m	struct:Graph
+edges	Graph_Expression/Node.h	/^    std::unordered_set<Edge> edges;    \/\/ 本节点发散出去的边$/;"	m	struct:Node
+from	Graph_Expression/Edge.h	/^    Node *from; \/\/ 边的起始节点$/;"	m	struct:Edge
+in	Graph_Expression/Node.h	/^    int in;    \/\/ 入度（指向我的边数）$/;"	m	struct:Node
+nexts	Graph_Expression/Node.h	/^    std::unordered_set<Node *> nexts;  \/\/ 本节点发散出去的相邻节点$/;"	m	struct:Node
+nodes	Graph_Expression/Graph.h	/^    std::unordered_map<int, Node *> nodes; \/\/ 图拥有的节点集 <节点号, 节点指针>$/;"	m	struct:Graph
+out	Graph_Expression/Node.h	/^    int out;   \/\/ 出度（我指向的边数）$/;"	m	struct:Node
+q	Graph_Expression/Node.h	/^    std::queue<Node *> q;$/;"	m	struct:Node
+to	Graph_Expression/Edge.h	/^    Node *to;   \/\/ 边的末端节点$/;"	m	struct:Edge
+value	Graph_Expression/Node.h	/^    int value; \/\/ 本节点的值 $/;"	m	struct:Node
+weight	Graph_Expression/Edge.h	/^    int weight; \/\/ 边的权重$/;"	m	struct:Edge

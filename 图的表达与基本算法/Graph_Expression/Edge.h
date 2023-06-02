@@ -10,12 +10,15 @@
 #define _EDGE_H
 #include "Node.h"
 
+struct Node;
+
 struct Edge {
     int weight; // 边的权重
     Node *from; // 边的起始节点
     Node *to;   // 边的末端节点
 
-    Edge(int weight, Node *from, Node *to) : weight(weight), from(from), to(to); 
+    Edge() {};
+    Edge(int weight, Node *from, Node *to) : weight(weight), from(from), to(to) {}; 
 };
 
 #endif

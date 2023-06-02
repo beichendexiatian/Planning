@@ -15,8 +15,8 @@
 #include "Edge.h"
 
 struct Graph {
-    unordered_map<int, Node *> nodes; // 图拥有的节点集 <节点号, 节点指针>
-    unordered_set<Edge> edges;        // 图拥有的边集
+    std::unordered_map<int, Node *> nodes; // 图拥有的节点集 <节点号, 节点指针>
+    std::unordered_set<Edge *> edges;      // 图拥有的边集
 };
 
 #endif
